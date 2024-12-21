@@ -5,7 +5,7 @@ from math import floor
 
 def write_words(word_count, file_name):
     with open(file_name, 'w', encoding='utf-8') as f:
-        for i in range(word_count):
+        for i in range(1, word_count + 1):
             f.write(f'Какое-то слово № {i}\n')
             time.sleep(0.1)
         f.close()
